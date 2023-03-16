@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Calls</title>
+</head>
+<body>
+    <h1>User Calls</h1>
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>Stupid Calls</th>
+            <th>Fat Calls</th>
+            <th>Dumb Calls</th>
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
